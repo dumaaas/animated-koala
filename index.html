@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Koala</title>
+    <link href="/dist/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="bg-[#b9e188] w-screen h-screen flex flex-col items-center justify-center">
+        <!-- TREE -->
+        <div class="tree bg-[#7a5219] w-[20px] h-[400px] rounded-xl relative">
+            <!-- LEAFS -->
+            <div class="absolute bg-[#768a35] w-[30px] h-[30px] left-[20px] 
+                rounded-tl-[30px] rounded-br-[30px]">
+            </div>
+            <div class="absolute bg-[#768a35] w-[30px] h-[30px] left-[-30px] 
+                rounded-tr-[30px] rounded-bl-[30px]">
+            </div>
+            <div class="absolute bg-[#768a35] w-[30px] h-[30px] top-[21px] left-[44px] 
+                rounded-tr-[30px] rounded-bl-[30px] transform rotate-[20deg]">
+            </div>
+            <div class="leaf absolute bg-[#768a35] w-[30px] h-[30px] top-[57px] left-[75px] 
+                rounded-tr-[30px] rounded-bl-[30px] transform rotate-[-9deg]">
+            </div>
+            <div class="absolute bg-[#768a35] w-[30px] h-[30px] top-[28px] left-[71px] 
+                rounded-tr-[30px] rounded-bl-[30px] transform rotate-[90deg]">
+            </div>
+            <!-- BRANCH -->
+            <div class="absolute bg-[#7a5219] w-[15px] h-[100px] top-[40px] left-[30px] 
+                rounded-xl transform rotate-45">
+            </div>
+            <!-- HEAD -->
+            <div class="border-[1px] border-black z-20 absolute w-[100px] h-[100px]
+                bg-[#8c959c] rounded-t-[60px] rounded-bl-[25px] transform rotate-[-20deg]
+                rounded-br-[25px] left-[-90px] top-[80px]">
+            </div>
+            <!-- EYES -->
+            <div class="eye absolute z-30 w-[8px] h-[8px] bg-black rounded-full
+                top-[132px] left-[-65px]">
+            </div>
+            <div class="absolute z-30 w-[8px] h-[8px] bg-black rounded-full
+                top-[118px] left-[-23px]">
+            </div>
+            <!-- NOSE -->
+            <div class="border-black border-[1px] absolute z-30 bg-[#44535a] w-[25px]
+                h-[40px] rounded-t-[50%] rounded-br-[35%] rounded-bl-[35%] transform
+                rotate-[-23deg] top-[121px] left-[-48px]">
+            </div>
+            <!-- CHEECK -->
+            <div class="absolute z-30 bg-[#e6cfd3] w-[15px] h-[15px] rounded-full
+                top-[129px] left-[-12px]">
+            </div>
+            <!-- MOUNTH -->
+            <div class="mounth absolute z-30 transform rotate-[-20deg] w-[44px] h-[40px]
+                bg-transparent border-transparent border-b-black border-[2px]
+                rounded-bl-[18px] rounded-br-[8px] top-[129px] left-[-57px]">
+            </div>
+            <!-- EARS -->
+            <div class="absolute z-10 border-[1px] border-black w-[60px] h-[60px] rounded-full
+                bg-[#8c959c] top-[91px] left-[-124px]">
+            </div>
+            <div class="absolute z-10 w-[30px] h-[30px] rounded-full bg-[#e6cfd3]
+                top-[107px] left-[-107px]">
+            </div>
+            <div class="absolute z-10 border-[1px] border-black w-[60px] h-[60px] rounded-full
+                bg-[#8c959c] top-[63px] left-[-32px]">
+            </div>
+            <div class="absolute z-10 w-[30px] h-[30px] rounded-full bg-[#e6cfd3]
+                top-[79px] left-[-16px]">
+            </div>
+            <!-- BODY -->
+            <div class="absolute border-[1px] border-black bg-[#8c959c] w-[87px] h-[142px]
+                top-[170px] left-[-86px] rounded-tl-[67%] rounded-tr-[71%] rounded-bl-[123%]
+                rounded-br-[113px]">
+            </div>
+            <!-- HANDS -->
+            <div class="absolute z-30 hand border-[1px] border-l-transparent border-black
+                bg-[#8c959c] w-[80px] h-[30px] top-[176px] left-[-47px] rounded-[60%]">
+            </div>
+            <div class="absolute border-[1px] border-black bg-[#8c959c] w-[60px] h-[23px]
+                top-[295px] left-[-23px] rounded-full">
+            </div>
+            <div class="absolute border-[1px] border-black border-l-transparent bg-[#8c959c]
+                w-[61px] h-[66px] transfrom rotate-[-54deg] top-[236px] left-[-34px] rounded-[60%]">
+            </div>
+            <!-- FINGERS -->
+            <div class="absolute w-[9px] top-[302px] left-[27px] h-[1px] bg-black">
+            </div>
+            <div class="absolute w-[9px] top-[307px] left-[27px] h-[1px] bg-black">
+            </div>
+            <!-- TAIL -->
+            <div class="absolute top-[284px] left-[-84px] w-[20px] h-[20px] border-[1px]
+            border-black rounded-full bg-[#8c959c]">
+            </div>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tree:hover .leaf {
+    animation: fallLeaf 6s forwards;
+}
+
+.tree:hover .hand {
+    animation: eat 3s;
+    animation-delay: 3s;
+}
+
+.tree:hover .eye {
+    animation: wink 1s step-end;
+    animation-delay: 5.5s;
+}
+
+@keyframes fallLeaf {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-20px, 25px);
+    }
+
+    20% {
+        transform: translate(5px, 50px);
+    }
+
+    30% {
+        transform: translate(-30px, 70px);
+    }
+
+    40% {
+        transform: translate(-10px, 95px);
+    }
+
+    50% {
+        transform: translate(-52px, 117px);
+    }
+
+    75% {
+        transform: translate(-102px, 98);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-102px, 98px);
+        opacity: 0;
+    }
+}
+
+@keyframes eat {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-80deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes wink {
+    50% {
+        width: 15px;
+        height: 2px;
+        left: -69px;
+    }
+}
